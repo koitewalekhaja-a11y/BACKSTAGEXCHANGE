@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Home | Backstage Xchange</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="footer.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@700&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  
+  <style>
+    .footer {
+        position: relative !important;
+        background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(0, 0, 0, 0.9)), url("background.png") !important;
+        background-size: cover !important;
+        background-position: center !important;
+        padding: 50px 8% 20px !important;
+        display: block !important;
+        overflow: hidden !important;
+    }
+
+    .footer-container {
+        display: grid !important;
+        /* Adjusted widths to match the new column positions perfectly */
+        grid-template-columns: 2fr 1fr 1fr 1.5fr !important;
+        gap: 40px !important;
+        position: relative !important;
+        z-index: 2 !important;
+        text-align: left !important;
+    }
+
+    .footer-logo {
+        color: white !important;
+        font-size: 24px !important;
+        font-weight: 800 !important;
+        margin-bottom: 10px !important;
+        letter-spacing: 1px !important;
+    }
+    .footer-logo span { color: #42c8f5 !important; }
+
+    .footer-box p {
+        color: rgba(255, 255, 255, 0.6) !important;
+        line-height: 1.6 !important;
+        font-size: 14px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .footer-box h3 {
+        color: white !important;
+        font-size: 18px !important;
+        margin-bottom: 20px !important;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1px !important;
+    }
+
+    .footer-box ul { 
+        list-style: none !important; 
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .footer-box ul li { 
+        margin-bottom: 10px !important; 
+        list-style-type: none !important;
+    }
+
+    .footer-box ul li a,
+    .footer-box p a,
+    .footer a {
+        text-decoration: none !important;
+        color: rgba(255, 255, 255, 0.7) !important;
+        font-size: 14px !important;
+        transition: 0.3s !important;
+        display: inline-block !important;
+    }
+
+    .footer-box ul li a:hover,
+    .footer-box p a:hover,
+    .footer a:hover { 
+        color: #42c8f5 !important; 
+        padding-left: 5px !important; 
+    }
+
+    /* HOVER EFFECT FOR ADDRESS */
+    .address-hover {
+        transition: 0.3s !important;
+        cursor: default !important;
+    }
+    
+    .address-hover:hover {
+        color: #42c8f5 !important;
+        padding-left: 5px !important;
+    }
+
+    .social-icons { 
+        display: flex !important; 
+        gap: 10px !important; 
+        margin-top: 15px !important; 
+        list-style: none !important;
+        padding: 0 !important;
+    }
+
+    .social-icons a {
+        width: 35px !important;
+        height: 35px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        border-radius: 50% !important;
+        color: white !important;
+        font-size: 14px !important;
+        transition: 0.3s !important;
+    }
+
+    .social-icons a i {
+        color: white !important;
+    }
+
+    .social-icons a:hover { 
+        background: #42c8f5 !important; 
+        border-color: #42c8f5 !important; 
+    }
+
+    .footer-bottom {
+        margin-top: 50px !important;
+        padding-top: 20px !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+        text-align: center !important;
+    }
+
+    .footer-bottom p {
+        color: rgba(255, 255, 255, 0.4) !important;
+        font-size: 12px !important;
+        letter-spacing: 1px !important;
+        text-align: center !important;
+        margin: 0 !important;
+    }
+
+    @media(max-width: 991px) {
+        .footer-container { grid-template-columns: repeat(2, 1fr) !important; gap: 30px !important; }
+    }
+    @media(max-width: 576px) {
+        .footer-container { grid-template-columns: 1fr !important; }
+        .footer { padding: 40px 6% 10px !important; }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <img src="Backstage-Xchange-Logo.webp" alt="Logo">
+    </div>
+    <ul class="nav-links">
+         <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blogg.html">Blogg</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy policy.html">Privacy Policy</a></li>
+        <li><a href="terms conditions.html">Terms & Conditions</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>EVENT        PLANNERS  IN      GOA</h1>
+  </div>
+</section>
+
+<section class="about-preview" id="about-preview">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="artistHero.png" alt="About Backstage Xchange">
+    </div>
+    <div class="about-content">
+      <span class="section-tag">About Us</span>
+      <h2>We Are Event Planner & Organizer Since 2015</h2>
+      <p>We are the most effective and most identifiable event management company in Goa making management easier at all levels, beginning from the very first step and always reaching the end.</p>
+      <p>We make sure every event is a perfect event with planned coordination, skilled execution & a strong base of the top most vendors catering to clients of national stature & international stature.</p>
+      <a href="about.html" class="btn">Learn More</a>
+    </div>
+  </div>
+</section>
+
+<section class="other-services">
+    <div class="section-title">
+        <span> SERVICES</span>
+        <h2>What We Provide</h2>
+    </div>
+    <div class="other-grid">
+        <div class="other-card1">
+            <div class="card-bg"></div>
+            <h3>STAGE</h3>
+            <p>We offers stage designs of standard and creative custom designs suiting to the requirement and the best setting.</p>
+        </div>
+        <div class="other-card2">
+            <div class="card-bg"></div>
+            <h3>LIGHTS</h3>
+            <p>We offer lights for events such as Concerts, Gigs etc. Putting up LED cans, lasers, sharpies, strobe lights etc.</p>
+        </div>
+        <div class="other-card3">
+            <div class="card-bg"></div>
+            <h3>LED WALL</h3>
+            <p>Specialising in Custom LED Wall designs for indoor and outdoor events ranging from different hardware.</p>
+        </div>
+        <div class="other-card4">
+            <div class="card-bg"></div>
+            <h3>SOUND</h3>
+            <p>We offer quality sound production comprising of brands like Bose, JBL, VRX and more for small scale events.</p>
+        </div>
+        <div class="other-card5">
+            <div class="card-bg"></div>
+            <h3>DECORATION</h3>
+            <p>Creative decor for birthdays, weddings, corporates, nightlife and themed parties.</p>
+        </div>
+        <div class="other-card6">
+            <div class="card-bg"></div>
+            <h3>SPECIAL FX</h3>
+            <p>CO2 guns, smoke machines, cold pyros & confetti blasts for events of all sorts.</p>
+        </div>
+    </div>
+</section>
+
+<section class="why-choose-us" id="why-choose-us">
+  <div class="why-header">
+    <span class="section-tag">Why Choose Us</span>
+    <h2>We Provide The Best Services For Your Special Event</h2>
+    <p>We seek to change the future of design through a wide network & collective of innovative and creative ideas by adding an extra touch to already existing ideas & platforms to shape any event into the perfect event.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-icon"><i class="fas fa-star"></i></div>
+      <h3>SERVING TOP EVENTS</h3>
+      <p>We aim to serve the best events in the country with our growing network and our expertise in the vast field of event management.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon"><i class="fas fa-users"></i></div>
+      <h3>BUILDING A LARGER NETWORK</h3>
+      <p>We aim to build larger team and networks by managing events on the highest scales & providing the most unique finish to our work.</p>
+    </div>
+    <div class="why-card">
+      <div class="why-icon"><i class="fas fa-calendar-check"></i></div>
+      <h3>CREATING EMPLOYMENT</h3>
+      <p>We aim to create employment by offering the determined youth a chance to work in the ever growing event sector.</p>
+    </div>
+  </div>
+</section>
+
+<section class="benefits-section" id="benefits">
+  <div class="benefits-header">
+    <span class="section-tag">Benefits</span>
+    <h2>Unlock Premium Advantages With Backstage Xchange</h2>
+    <p>Experience unmatched nightlife opportunities, exclusive privileges, and powerful event solutions designed for guests, artists, and promoters.</p>
+  </div>
+  <div class="benefits-container">
+    <div class="benefits-content">
+      <div class="benefit-item">
+        <i class="fas fa-check-circle"></i>
+        <div>
+          <h3>Priority Club & Event Access</h3>
+          <p>Skip long queues with VIP entry to Goa’s top nightlife destinations.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-check-circle"></i>
+        <div>
+          <h3>Artist & Venue Networking</h3>
+          <p>Connect directly with premium artists, clubs, and event organizers.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-check-circle"></i>
+        <div>
+          <h3>Luxury Lifestyle Experiences</h3>
+          <p>Enjoy private parties, yacht bookings, and exclusive entertainment packages.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-check-circle"></i>
+        <div>
+          <h3>Event Growth & Promotion</h3>
+          <p>Boost your events with strategic marketing and premium audience reach.</p>
+        </div>
+      </div>
+    </div>
+    <div class="benefits-image">
+      <img src="benefit.png" alt="Benefits Image">
+    </div>
+  </div>
+</section>
+
+<section class="process-section" id="process">
+  <div class="process-header">
+    <span class="section-tag">How It Works</span>
+    <h2>Your Journey To Premium Nightlife Starts Here</h2>
+    <p>Backstage Xchange makes discovering, booking, and enjoying elite nightlife experiences simple, seamless, and unforgettable.</p>
+  </div>
+  <div class="process-container">
+    <div class="process-step">
+      <div class="step-number">01</div>
+      <div class="step-icon"><i class="fas fa-user-plus"></i></div>
+      <h3>Register</h3>
+      <p>Sign up as a guest, artist, promoter, or venue owner to access premium opportunities.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-number">02</div>
+      <div class="step-icon"><i class="fas fa-search"></i></div>
+      <h3>Explore</h3>
+      <p>Browse exclusive events, VIP bookings, artist collaborations, and luxury experiences.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-number">03</div>
+      <div class="step-icon"><i class="fas fa-calendar-check"></i></div>
+      <h3>Book</h3>
+      <p>Secure your place instantly with easy reservations and premium service options.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-number">04</div>
+      <div class="step-icon"><i class="fas fa-glass-cheers"></i></div>
+      <h3>Experience</h3>
+      <p>Enjoy Goa’s finest nightlife, luxury events, and unforgettable entertainment.</p>
+    </div>
+  </div>
+</section>
+
+<section class="counter-section">
+    <div class="counter-container">
+        <div class="counter-box">
+            <h2 class="counter" data-target="250">0</h2>
+            <p>Successful Events</p>
+        </div>
+        <div class="counter-box">
+            <h2 class="counter" data-target="120">0</h2>
+            <p>Happy Clients</p>
+        </div>
+        <div class="counter-box">
+            <h2 class="counter" data-target="50">0</h2>
+            <p>Professional Team</p>
+        </div>
+        <div class="counter-box">
+            <h2 class="counter" data-target="7">0</h2>
+            <p>Years Experience</p>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials" id="testimonials">
+  <h2>What Our Clients Say</h2>
+  <p class="testimonial-subtitle">Trusted by party lovers, artists, promoters, and premium nightlife brands.</p>
+  <div class="testimonial-container">
+    <div class="testimonial-card">
+      <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+      <p>Backstage Xchange gave us VIP access to Goa’s best clubs. The entire experience was seamless, luxurious, and unforgettable.</p>
+      <div class="client-info">
+        <img src="client.png" alt="Client 1">
+        <div>
+          <h3>Riya Sharma</h3>
+          <span>Luxury Guest</span>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+      <p>As an event promoter, this platform helped me boost bookings and connect with premium audiences faster than ever before.</p>
+      <div class="client-info">
+        <img src="client2.png" alt="Client 2">
+        <div>
+          <h3>Aditya Mehra</h3>
+          <span>Event Promoter</span>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+      <p>Incredible platform for artist bookings and nightlife collaborations. Professional, stylish, and highly effective.</p>
+      <div class="client-info">
+        <img src="client3.png" alt="Client 3">
+        <div>
+          <h3>DJ Kavya</h3>
+          <span>Artist Partner</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery-section" id="gallery">
+  <h2>Our Gallery</h2>
+  <p class="gallery-subtitle">Explore unforgettable nightlife moments, luxury events, and exclusive experiences.</p>
+  <div class="gallery-grid">
+    <div class="gallery-item"><img src="pc1.png" alt="Gallery Image 1"></div>
+    <div class="gallery-item"><img src="pc2.png" alt="Gallery Image 2"></div>
+    <div class="gallery-item"><img src="pc3.png" alt="Gallery Image 3"></div>
+  </div>
+  <div class="gallery-btn">
+    <a href="gallery.html" class="btn">View Full Gallery</a>
+  </div>
+</section>
+
+<section class="faq-section">
+    <div class="faq-heading">
+        <span>FAQ</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Find answers to the most common questions about our event management services.</p>
+    </div>
+    <div class="faq-wrapper">
+        <div class="faq-column">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What services does Backstage Xchange provide?</h3>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We provide complete event management solutions including stage setup, lighting, sound systems, LED walls, artist management, nightlife events, and wedding planning.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you manage weddings and private events?</h3>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we organize weddings, birthday parties, luxury private events, corporate functions, and customized celebrations.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can you provide artist bookings?</h3>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we provide artist management and bookings for DJs, celebrity appearances, live performers, and entertainment acts.</p>
+                </div>
+            </div>
+        </div>
+        <div class="faq-column">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you provide sound and lighting equipment?</h3>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely. We provide professional sound systems, LED walls, lasers, smoke machines, stage lights, and complete technical event setups.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How early should I book my event?</h3>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We recommend booking at least 2-4 weeks in advance to ensure proper planning and availability of services.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How can I contact Backstage Xchange?</h3>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>You can contact us through our website booking form, phone number, email, or social media platforms.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section" id="cta">
+  <div class="cta-overlay"></div>
+  <div class="cta-content">
+    <span class="section-tag">Join The Experience</span>
+    <h2>Ready To Experience Goa’s Elite Nightlife?</h2>
+    <p>Discover premium events, VIP bookings, luxury experiences, and exclusive artist collaborations — all in one place.</p>
+    <div class="cta-buttons">
+      <a href="#booking" class="cta-btn primary-btn">Book Now</a>
+      <a href="contact.html" class="cta-btn secondary-btn">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<section class="booking" id="booking">
+  <h2>Book Your Spot</h2>
+  <form>
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="tel" placeholder="Phone Number" required>
+    <select required>
+      <option value="">Choose Role</option>
+      <option>Guest</option>
+      <option>Artist</option>
+      <option>Promoter</option>
+      <option>Venue Owner</option>
+    </select>
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer class="footer">
+    <div class="footer-overlay"></div>
+    <div class="footer-container">
+        
+        <div class="footer-box">
+            <div class="footer-logo">BACKSTAGE<span>XCHANGE</span></div>
+            <p>Creating premium nightlife experiences, event management, artist collaborations and luxury entertainment solutions.</p>
+        </div>
+
+        <div class="footer-box">
+           <h3>Know More</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Connect</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-box">
+            <h3>Services</h3>
+            <p class="address-hover">Ground Floor 852 Surbha Niwas, Near Goa Oxygen Factory Curtorim, Camarxet Salcete Goa</p>
+            <p><a href="mailto:ankith@backstagexchange.com" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">ankith@backstagexchange.com</a></p>
+            <p><a href="tel:+919112400340" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">+91 9112400340</a></p>
+            <p><a href="tel:+919923580022" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">+91 9923580022</a></p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>COPYRIGHT &copy; 2026 BACKSTAGE XCHANGE | DESIGNED & DEVELOPED BY BACKSTAGE XCHANGE</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
